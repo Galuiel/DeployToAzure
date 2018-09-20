@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= 'Winners of Irish Dancing World Championship (2018)'
+    ul
+        each winner in winners
+            li= winner.group + ' - ' + winner.name + ' (' + winner.school + ' : ' + winner.region + ')'
+            br
+

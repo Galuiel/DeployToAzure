@@ -1,8 +1,29 @@
+.nav {
+  padding: 10px;
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Comic Sans MS", cursive, sans-serif;
+  background-color: #a7eaad;
+  width: 84%;
+  margin: auto;
+}
+
+#container.col {
+  background-color: #cceacb;
+  padding: 20px;
 }
 
 a {
-  color: #00B7FF;
+  color: #ffc13f;
+  background-color: #000000;
+  padding: 5px;
 }
+
+a:hover {
+  color: #ffe89b;
+  background-color: #000000;
+  padding: 5px;
+}
+

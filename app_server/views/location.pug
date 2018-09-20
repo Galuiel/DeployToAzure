@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= 'Locations of the Irish Dancing World Championships'
+    ul
+        each winner in winners
+            li= winner.year + ' - ' + winner.location
+            br
+
