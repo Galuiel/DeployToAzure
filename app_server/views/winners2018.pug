@@ -1,9 +1,40 @@
 extends layout
-
 block content
-    h1= 'Winners of Irish Dancing World Championship (2018)'
-    ul
-        each winner in winners
-            li= winner.group + ' - ' + winner.name + ' (' + winner.school + ' : ' + winner.region + ')'
-            br
+    .container
+        .row
+            .col-12
+                h1= 'Winners of Irish Dancing World Championship (2018)'
+        .row
+            .col-2
+            .col-8
+                #demo.carousel.slide(data-ride='carousel')
+                    // Indicators
+                    ul.carousel-indicators
+                        li.active(data-target='#demo', data-slide-to='0')
+                        li(data-target='#demo', data-slide-to='1')
+                        li(data-target='#demo', data-slide-to='2')
+                    // The slideshow
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src='images/Winners01.png', alt='Logo Of The Worlds 2018', height='490')
+                        .carousel-item
+                            img(src='images/Winners02.jpg', alt='Line up', height='490')
+                        .carousel-item
+                            img(src='images/Winners03.jpg', alt='Winners', height='490')
+                        .carousel-item
+                            img(src='images/Winners04.jpg', alt='3 dancing girls', height='490')
+                    // Left and right controls
+                    a.carousel-control-prev(href='#demo', data-slide='prev')
+                        span.carousel-control-prev-icon
+                    a.carousel-control-next(href='#demo', data-slide='next')
+                        span.carousel-control-next-icon
+            .col-2
+
+        .row
+            .col-12
+                br
+                ul
+                    each winner in winners
+                        li= winner.group + ' - ' + winner.name + ' (' + winner.school + ' : ' + winner.region + ')'
+                        br
 
