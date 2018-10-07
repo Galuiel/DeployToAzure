@@ -59,28 +59,28 @@
     <session id="214520298">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="931" />
           <entry key="js" value="111" />
-          <entry key="pug" value="3186" />
+          <entry key="pug" value="3220" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="931" />
-          <entry key="Jade" value="3186" />
+          <entry key="Jade" value="3220" />
           <entry key="JavaScript" value="111" />
         </counts>
       </usages-collector>
@@ -89,7 +89,7 @@
           <entry key="css" value="6" />
           <entry key="js" value="20" />
           <entry key="json" value="2" />
-          <entry key="pug" value="23" />
+          <entry key="pug" value="25" />
           <entry key="rnc" value="1" />
           <entry key="www" value="2" />
         </counts>
@@ -98,7 +98,7 @@
         <counts>
           <entry key="CSS" value="6" />
           <entry key="JSON" value="2" />
-          <entry key="Jade" value="23" />
+          <entry key="Jade" value="25" />
           <entry key="JavaScript" value="22" />
           <entry key="RNG Compact" value="1" />
         </counts>
@@ -109,36 +109,14 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/www">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_server/views/location.pug">
+        <entry file="file://$PROJECT_DIR$/app_server/views/index.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_server/views/winners2018.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="425">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -163,12 +141,12 @@
         <option value="$PROJECT_DIR$/app_server/controllers/winners2018.js" />
         <option value="$PROJECT_DIR$/app_server/views/layout.pug" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/app_server/views/exams.pug" />
-        <option value="$PROJECT_DIR$/app_server/views/index.pug" />
         <option value="$PROJECT_DIR$/app_server/views/winners2018.pug" />
         <option value="$PROJECT_DIR$/app_server/controllers/location.js" />
         <option value="$PROJECT_DIR$/app_server/routes/index.js" />
         <option value="$PROJECT_DIR$/app_server/views/location.pug" />
+        <option value="$PROJECT_DIR$/app_server/views/exams.pug" />
+        <option value="$PROJECT_DIR$/app_server/views/index.pug" />
       </list>
     </option>
   </component>
@@ -195,13 +173,14 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1998" />
     <option name="width" value="1854" />
-    <option name="height" value="2172" />
+    <option name="height" value="2174" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,7 +226,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,11 +280,12 @@
       <workItem from="1538917545575" duration="190000" />
       <workItem from="1538917762843" duration="4000" />
       <workItem from="1538918108615" duration="10185000" />
+      <workItem from="1538931895473" duration="385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53119000" />
+    <option name="totallyTimeSpent" value="53504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="-6" width="1638" height="972" extended-state="6" />
@@ -382,13 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/views/exams.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="95" selection-start-line="127" selection-start-column="95" selection-end-line="127" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/views/layout.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -396,38 +368,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/views/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/views/winners2018.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -459,10 +403,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/views/exams.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/views/location.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/views/winners2018.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="4" column="19" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/views/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
         </state>
       </provider>
     </entry>
