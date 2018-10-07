@@ -1,9 +1,47 @@
 extends layout
 
 block content
-    h1= 'Locations of the Irish Dancing World Championships'
-    ul
-        each winner in winners
-            li= winner.year + ' - ' + winner.location
-            br
+    .container
+        .row.text-center
+            .col-12
+                h1= 'Locations of the Irish Dancing World Championships'
 
+    .container
+        .row.text-center
+            .col-6
+                br
+                h3= 'Upcoming Locations of the Worlds'
+                br
+            .col-6
+                br
+                h3= 'About the next location...'
+                br
+        .row.text-center
+            .col-6
+                table.table.table-hover
+                    thead
+                        tr
+                            th Year
+                            th Location
+                    tbody
+                        tr
+                            td 2019
+                            td Greensboro
+                        tr
+                            td 2020
+                            td Dublin
+                        tr
+                            td 2021
+                            td Killarney
+                        tr
+                            td 2022
+                            td Belfast
+                        tr
+                            td 2023
+                            td Montreal
+                        tr
+                            td 2024
+                            td Glasgow
+            .col-6
+                .embed-responsive.embed-responsive-16by9
+                    iframe.embed-responsive-item(src='https://www.youtube.com/embed/a7TB8OxcaoQ', allowfullscreen='')

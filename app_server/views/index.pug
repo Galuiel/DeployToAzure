@@ -2,7 +2,7 @@ extends layout
 block content
   .container
     .row
-      .col-6
+      .flex-col-7
         #demo.carousel.slide(data-ride='carousel')
           // Indicators
           ul.carousel-indicators
@@ -12,26 +12,26 @@ block content
           // The slideshow
           .carousel-inner
             .carousel-item.active
-              img(src='images/Home01.png', alt='Quote', width='500', height='750')
+              img(src='images/Home01.png', alt='Quote', width='90%', height='90%')
             .carousel-item
-              img(src='images/Home02.jpg', alt='birdie', width='500', height='750')
+              img(src='images/Home02.jpg', alt='birdie', width='90%', height='90%')
             .carousel-item
-              img(src='images/Home03.jpg', alt='quote2', width='500', height='750')
+              img(src='images/Home03.jpg', alt='quote2', width='90%', height='90%')
           // Left and right controls
           a.carousel-control-prev(href='#demo', data-slide='prev')
             span.carousel-control-prev-icon
           a.carousel-control-next(href='#demo', data-slide='next')
             span.carousel-control-next-icon
 
-      .col-6
+      .col-5
         br
         br
         br
         h1 All about Irish Dance...
-        h5
-          p Want to know more about Irish Dance?
-          p Or wonder what kind of exams can you take?
-          p Or just want to know who were the world champions of this year?
-          p Do you want to know the next World Championship's location?
-          br
-        h4 Look around in this site and find out more!
+          h5
+            p Want to know more about Irish Dance?
+            p Or wonder what kind of exams can you take?
+            p Or just want to know who were the world champions of this year?
+            p Do you want to know the next World Championship's location?
+            br
+          h4 Check out the other pages and find out more!

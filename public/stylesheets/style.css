@@ -11,13 +11,12 @@ nav a {
 nav a:hover {
   color: #aed944;
   text: bold;
-  text: italic;
 }
 
 body {
   background-color: #e3ddc4;
   color: #44494F;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 

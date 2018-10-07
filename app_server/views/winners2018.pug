@@ -1,12 +1,11 @@
 extends layout
 block content
     .container
-        .row
+        .row.text-center
             .col-12
                 h1= 'Winners of Irish Dancing World Championship (2018)'
-        .row
-            .col-2
-            .col-8
+        .row.text-center
+            .col-12
                 #demo.carousel.slide(data-ride='carousel')
                     // Indicators
                     ul.carousel-indicators
@@ -16,13 +15,13 @@ block content
                     // The slideshow
                     .carousel-inner
                         .carousel-item.active
-                            img(src='images/Winners01.png', alt='Logo Of The Worlds 2018', height='490')
+                            img(src='images/Winners01.png', alt='Logo Of The Worlds 2018', width='80%', height='80%')
                         .carousel-item
-                            img(src='images/Winners02.jpg', alt='Line up', height='490')
+                            img(src='images/Winners02.jpg', alt='Line up', width='80%', height='80%')
                         .carousel-item
-                            img(src='images/Winners03.jpg', alt='Winners', height='490')
+                            img(src='images/Winners03.jpg', alt='Winners', width='80%', height='80%')
                         .carousel-item
-                            img(src='images/Winners04.jpg', alt='3 dancing girls', height='490')
+                            img(src='images/Winners04.jpg', alt='3 dancing girls', width='80%', height='80%')
                     // Left and right controls
                     a.carousel-control-prev(href='#demo', data-slide='prev')
                         span.carousel-control-prev-icon
@@ -31,10 +30,11 @@ block content
             .col-2
 
         .row
-            .col-12
+            .col-3
+            .col-6
                 br
                 ul
                     each winner in winners
                         li= winner.group + ' - ' + winner.name + ' (' + winner.school + ' : ' + winner.region + ')'
                         br
-
+            .col-3
