@@ -1,8 +1,10 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+require('./app_server/models/db');
 
 const indexRouter = require('./app_server/routes/index');
 
