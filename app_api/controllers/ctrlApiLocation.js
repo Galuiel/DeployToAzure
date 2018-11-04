@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 //Get access to the locations model so we can interact with the collection
 const locationsModel = mongoose.model('locations');
 
-const locationsList =  function (req, res) {
+const locationsList =  function(req, res) {
     locationsModel.find({}, function(err, locations) {
         if (err) {
             res.status(404).json(err);
