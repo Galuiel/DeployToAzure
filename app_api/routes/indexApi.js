@@ -12,7 +12,7 @@ router
 //locations (list of World Championship locations by year)
 router
     .route('/locations')
-    .get(ctrlApiLocation.locationList)
+    .get(ctrlApiLocation.locationsList)
     .put(ctrlApiLocation.addLocation);
 
 module.exports = router;
