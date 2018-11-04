@@ -16,7 +16,7 @@ const locationList =  function (req, res) {
 };
 
 const addLocation = function (req, res) {
-    locationsModel.add(req.body, function (err, newLocation) {
+    locationsModel.create(req.body, function (err, newLocation) {
         if (err) {
             res.status(400).json(err);
         }
