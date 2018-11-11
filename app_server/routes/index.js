@@ -8,7 +8,7 @@ const ctrlExams = require('../controllers/exams');
 
 router.get('/', ctrlMain.index);
 router.get('/winners2018', ctrlWinners2018.winnerlist);
-router.get('/location', ctrlLocation.index);
+router.get('/location', ctrlLocation.winnerlist);
 router.get('/exams', ctrlExams.index);
 
 module.exports = router;

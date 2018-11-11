@@ -6,35 +6,38 @@ block content
                 h1= 'Winners of Irish Dancing World Championship (2018)'
         .row.text-center
             .col-12
-                #demo.carousel.slide(data-ride='carousel')
+                .carousel.slide(id="carousel-", data-ride="carousel")
                     // Indicators
-                    ul.carousel-indicators
-                        li.active(data-target='#demo', data-slide-to='0')
-                        li(data-target='#demo', data-slide-to='1')
-                        li(data-target='#demo', data-slide-to='2')
+                    ol.carousel-indicators
+                        -for (var i = 0; i < 4; i++) {
+                        if(i == 0)
+                            li.active(data-target="#carousel-", data-slide-to=i)
+                        else
+                            li(data-target="#carousel-", data-slide-to=i)
+                        -}
                     // The slideshow
                     .carousel-inner
-                        .carousel-item.active
-                            img(src='images/Winners01.png', alt='Logo Of The Worlds 2018', width='80%', height='80%')
-                        .carousel-item
-                            img(src='images/Winners02.jpg', alt='Line up', width='80%', height='80%')
-                        .carousel-item
-                            img(src='images/Winners03.jpg', alt='Winners', width='80%', height='80%')
-                        .carousel-item
-                            img(src='images/Winners04.jpg', alt='3 dancing girls', width='80%', height='80%')
+                        -for (var n = 1; n < 5; n++) {
+                        if(n == 1)
+                            .carousel-item.active
+                                img(src='images/Winners0' + n + '.png', width='80%', height='80%')
+                        else
+                            .carousel-item
+                                img(src='images/Winners0' + n + '.jpg', width='80%', height='80%')
+                        -}
                     // Left and right controls
-                    a.carousel-control-prev(href='#demo', data-slide='prev')
+                    a.carousel-control-prev(href='#carousel-', data-slide='prev')
                         span.carousel-control-prev-icon
-                    a.carousel-control-next(href='#demo', data-slide='next')
+                    a.carousel-control-next(href='#carousel-', data-slide='next')
                         span.carousel-control-next-icon
             .col-2
 
         .row
             .col-3
-            .col-6
+            .col-7
                 br
                 ul
                     each winner in winners
                         li= winner.group + ' - ' + winner.name + ' (' + winner.school + ' : ' + winner.region + ')'
                         br
-            .col-3
+            .col-2

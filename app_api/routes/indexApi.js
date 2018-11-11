@@ -13,6 +13,6 @@ router
 router
     .route('/locations')
     .get(ctrlApiLocation.locationsList)
-    .put(ctrlApiLocation.addLocation);
+    .post(ctrlApiLocation.addLocation);
 
 module.exports = router;

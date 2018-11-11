@@ -45,3 +45,26 @@ block content
             .col-6
                 .embed-responsive.embed-responsive-16by9
                     iframe.embed-responsive-item(src='https://www.youtube.com/embed/a7TB8OxcaoQ', allowfullscreen='')
+
+    .container
+        .row
+            .col-12
+                br
+                br
+        .row.text-center
+            .col-12
+                h3= 'All locations so far...'
+
+        .row.text-center
+            .col-4
+            .col-4
+                table.table.table-hover
+                    thread
+                        tr
+                            th Year
+                            th Location
+                        each winner in winners
+                            tr
+                                td=winner.year
+                                td=winner.town
+            .col-4
