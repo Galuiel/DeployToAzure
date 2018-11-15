@@ -17,6 +17,7 @@ const winnersList =  function (req, res) {
 };
 
 const addWinner = function (req, res) {
+
     winners2018Model.create(req.body, function (err, newWinner) {
         if (err) {
             res.status(400).json(err);

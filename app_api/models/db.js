@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbURI = 'mongodb://Galuiel:1r1sh5tepDance@ds145113.mlab.com:45113/worlds';
+const dbURI = 'mongodb://Galuiel:1r1sh5tepDance@ds255403.mlab.com:55403/worlds';
 
 mongoose.connect(dbURI);
 

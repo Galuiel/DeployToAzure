@@ -2,9 +2,11 @@ const mongoose = require('mongoose');
 
 //Schemas define the document structure used in the app
 const winners2018Schema = new mongoose.Schema({group:'String', name:'String', school:'String', region:'String'});
-const locationsSchema = new mongoose.Schema({year:'String', town:'String'});
+const locationSchema = new mongoose.Schema({year:'String', town:'String'});
+const quotesSchema = new mongoose.Schema({quoter:'String', quote:'String'});
 
 //Models will contain compiled instances of the schemas
 //so they can be used in the app later
 mongoose.model('winners2018', winners2018Schema, 'winners2018');
-mongoose.model('locations', locationsSchema, 'locations');
+mongoose.model('locations', locationSchema, 'locations');
+mongoose.model('quotes', quotesSchema), 'quotes';

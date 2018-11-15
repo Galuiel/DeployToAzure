@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .row
+        .col-3
+        .col-8
+            h4 New quote
+            form(action="", method="post")
+                div.form-group
+                    label Name
+                        input#name.form-control(type="text", placeholder="Write the name of the person you quote from", name="quoter")
+                div.form-group
+                    label Quote
+                        input#quote.form-control(type="text", placeholder="Write the quote", name="quote")
+                div.form-group
+                    button.btn-dark Add
+        .col-1

@@ -1,0 +1,49 @@
+extends layout
+
+block content
+    .container
+        .row.text-center
+            .col-12
+                h1= 'Favourite Quotes from Awesome Dancers'
+                br
+
+    .container
+        .row
+            .col-3.text-center
+                img(src='images/Quotes01.jpg',  width='100%')
+            .col-3.text-center
+                img(src='images/Quotes02.jpg',  width='100%')
+            .col-3.text-center
+                img(src='images/Quotes03.jpg',  width='100%')
+            .col-3.text-center
+                img(src='images/Quotes04.jpg',  width='100%')
+
+    .container
+        .row
+            .col-12
+                br
+                br
+        .row
+            .col-1
+            .col-10
+                table.table
+                    thread
+                        tr.text-center
+                            th Name
+                            th Quote
+                        each winner in winners
+                            tr
+                                td=winner.quoter
+                                td.text-center=winner.quote
+                br
+            .col-1
+
+    .container
+        .row
+            .col-2
+            .col-3
+                a(href='/quotes_add') Add new quote
+            .col-7
+        .row.text-center
+            .col-12
+                br
