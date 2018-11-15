@@ -1,12 +1,12 @@
 extends layout
 
 block content
-    .container
+    .flex.container
         .row.text-center
             .col-12
                 h1= 'Locations of the Irish Dancing World Championships'
 
-    .container
+    .flex.container
         .row.text-center
             .col-6
                 br
@@ -16,7 +16,7 @@ block content
                 br
                 h3= 'About the next location...'
                 br
-        .row.text-center
+        .flex.row.text-center
             .col-6
                 table.table.table-hover
                     thead
@@ -46,7 +46,7 @@ block content
                 .embed-responsive.embed-responsive-16by9
                     iframe.embed-responsive-item(src='https://www.youtube.com/embed/a7TB8OxcaoQ', allowfullscreen='')
 
-    .container
+    .flex.container
         .row
             .col-12
                 br

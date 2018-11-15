@@ -1,6 +1,6 @@
 extends layout
 block content
-    .container
+    .flex.container
         .row.text-center
             .col-12
                 h1= 'Winners of Irish Dancing World Championship (2018)'
@@ -32,12 +32,24 @@ block content
                         span.carousel-control-next-icon
             .col-2
 
-        .row.text-center
-            .col-3
-            .col-7
-                br
-                ul
-                    each winner in winners
-                        li= winner.group + ' - ' + winner.name + ' (' + winner.school + ' : ' + winner.region + ')'
-                        br
-            .col-2
+        .flex.container
+            .row
+                .col-12
+                    br
+                    br
+
+            .flex.row.text-center
+                .col-12
+                    table.table.table-hover
+                        thread
+                            tr
+                                th Group
+                                th Name
+                                th School
+                                th Region
+                            each winner in winners
+                                tr
+                                    td=winner.group
+                                    td=winner.name
+                                    td=winner.school
+                                    td=winner.region
