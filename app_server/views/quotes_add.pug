@@ -8,10 +8,10 @@ block content
             form(action="", method="post")
                 div.form-group
                     label Name
-                        input#name.form-control(type="text", placeholder="Write the name of the person you quote from", name="quoter")
+                        input#name.form-control(type="text", placeholder="Write the name of the person you quote from", name="quoter", required)
                 div.form-group
                     label Quote
-                        input#quote.form-control(type="text", placeholder="Write the quote", name="quote")
+                        input#quote.form-control(type="text", placeholder="Write the quote", name="quote", required)
                 div.form-group
                     button.btn-dark Add
         .col-1
