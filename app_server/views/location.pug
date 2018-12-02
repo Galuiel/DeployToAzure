@@ -4,7 +4,9 @@ block content
     .flex.container
         .row.text-center
             .col-12
+                br
                 h1= 'Locations of the Irish Dancing World Championships'
+                br
 
     .flex.container
         .row.text-center
@@ -46,7 +48,7 @@ block content
                 .embed-responsive.embed-responsive-16by9
                     iframe.embed-responsive-item(src='https://www.youtube.com/embed/a7TB8OxcaoQ', allowfullscreen='')
 
-    .flex.container
+    .container
         .row
             .col-12
                 br
@@ -55,16 +57,27 @@ block content
             .col-12
                 h3= 'All locations so far...'
 
+        //.row.text-center
+            .col-12
+            table.table.table
+                    tr
+                        th Year
+                        th Location
+                        th Year
+                        th Location
+                        th Year
+                        th Location
+
         .row.text-center
             .col-4
-            .col-4
+            .col-4(class="locationsT")
                 table.table.table-hover
-                    thread
+                    tr
+                        th Year
+                        th Location
+
+                    each winner in winners
                         tr
-                            th Year
-                            th Location
-                        each winner in winners
-                            tr
-                                td=winner.year
-                                td=winner.town
+                            td=winner.year
+                            td=winner.town
             .col-4

@@ -28,7 +28,23 @@ const addQuote = function (req, res) {
     });
 };
 
+/* this could be an initial idea:
+
+const updateQuote = function (req, res) {
+
+    quotesModel.update(req.body, function (err, modifQuote) {
+        if (err) {
+            res.status(404).json(err);
+        }
+        else{
+            res.status(200).json(modifQuote);
+        }
+    });
+};
+*/
+
 module.exports = {
     quotesList,
     addQuote
+    //updateQuote
 };

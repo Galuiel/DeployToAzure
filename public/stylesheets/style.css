@@ -1,9 +1,9 @@
+/* navigation style (overall, link, link-hover)*/
 nav {
   background-color: #44494F;
   width: 90%;
   margin: auto;
 }
-
 nav a {
   color: #9cbf74;
   font-weight: bold;
@@ -13,13 +13,14 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* body style*/
 body {
   background-color: #e3ddc4;
   color: #44494F;
   width: 90%;
   margin: auto;
 }
-
+/* footer style*/
 footer {
   background-color: #44494F;
   color: #9cbf74;
@@ -28,15 +29,26 @@ footer {
   margin: auto;
   padding: 2px;
 }
+/*Locations-table
 
+.locationsT {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 4%;
+  -moz-column-count: 3;
+  -moz-column-gap: 3%;
+  column-gap: 4%;
+  column-count: 3;
+}
+*/
 
-.col-3 a {
+/*Quotes-page syle (add button, add button-hover)*/
+#addBtn a {
   color: #44494F;
   background-color: #9cbf74;
   font-weight: bold;
   padding: 8px;
 }
-.col-3 a:hover {
+#addBtn a:hover {
   color: #44494F;
   background-color: #aed944;
   font-weight: bold;
@@ -44,10 +56,15 @@ footer {
   ;
 }
 
+/* add quotes form style (input-row)*/
 #name {
   width: 200%;
 }
-
 #quote {
   width: 200%;
+}
+
+/*carousel style*/
+#carousel- {
+  padding: 8px;
 }

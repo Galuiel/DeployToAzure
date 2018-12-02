@@ -21,5 +21,6 @@ router
     .route('/quotes')
     .get(ctrlApiQuotes.quotesList)
     .post(ctrlApiQuotes.addQuote);
+// .put(ctrlApiQuotes.updateQuote)
 
 module.exports = router;

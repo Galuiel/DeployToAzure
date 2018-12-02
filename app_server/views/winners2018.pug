@@ -3,7 +3,9 @@ block content
     .flex.container
         .row.text-center
             .col-12
+                br
                 h1= 'Winners of Irish Dancing World Championship (2018)'
+                br
         .row.text-center
             .col-12
                 .carousel.slide(id="carousel-", data-ride="carousel")
@@ -38,15 +40,17 @@ block content
                     br
                     br
 
-            .flex.row.text-center
-                .col-12
+            //Table of Winners-2018 from database collection
+            .row.text-center
+                .col-12(class="winnersT")
                     table.table.table-hover
-                        thread
+                        thead
                             tr
                                 th Group
                                 th Name
                                 th School
                                 th Region
+                        tbody
                             each winner in winners
                                 tr
                                     td=winner.group
